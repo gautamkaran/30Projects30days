@@ -1,5 +1,152 @@
+/* ==================== reset ==================== */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 94%;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+/* ==================== utility classes ==================== */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(90deg, #4caf50, #2196f3);
+  border: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(90deg, #2196f3, #4caf50);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn.live-preview {
+  background: linear-gradient(90deg, #ff5722, #f44336);
+}
+
+.btn.live-preview:hover {
+  background: linear-gradient(90deg, #f44336, #ff5722);
+}
+
+.btn.github-link {
+  background: linear-gradient(90deg, #333333, #000000);
+}
+
+.btn.github-link:hover {
+  background: linear-gradient(90deg, #000000, #333333);
+}
+
+/* --------header ------------- */
+.header {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -8px 20px;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+nav > a {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 900;
+  margin-right: 5px;
+}
+.projects30 {
+  color: rgb(255, 0, 0);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.days30 {
+  color: rgba(10, 10, 10, 0.862);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* ================= projects ================== */
+.projects {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.project-item {
+  max-width: 340px;
+  background-color: rgb(247, 245, 245);
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 10px;
+  box-shadow: 0px 0px 10px 3px lightgray;
+}
+
+.project-data {
+  padding: 10px;
+}
+
+.project-data h2 {
+  font-size: 20px;
+  margin-block: 5px;
+}
+
+.project-data p {
+  font-size: 15px;
+  margin-block: 10px;
+}
+
+.no-projects {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin: 20px;
+  padding: 20px;
+  border: 1px dashed #aaa;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+/* ==================== footer ================== */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 15px 10px;
+  background: linear-gradient(90deg, #e0e0e0, #f5f5f5);
+  color: #333;
+  border-top: 1px solid #ccc;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
 }
