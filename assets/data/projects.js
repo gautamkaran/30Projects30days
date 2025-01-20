@@ -5,6 +5,6 @@ const projectsData = [
     description:
       "A simple digital clock displaying real-time hours, minutes, and seconds.",
     liveLink: "./Digital Clock/index.html",
-    githubLink: "https://github.com/yourusername/digital-clock",
+    githubLink: "https://github.com/gautamkaran/30Projects30days/tree/main/Digital%20Clock",
   },
 ];
