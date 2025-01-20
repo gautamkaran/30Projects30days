@@ -20,7 +20,7 @@ const projects = document.querySelector(".projects");
     div.innerHTML = `
       <div class="img">
         <a href="${liveLink}" target="_blank" rel="noopener noreferrer">
-          <img src="${img}" alt="${title}" width="300" height="200" loading="lazy"/>
+          <img src="${img}" alt="${title}" width="320" height="200" loading="lazy"/>
         </a>
       </div>
       <div class="project-data">
