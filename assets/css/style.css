@@ -69,7 +69,8 @@ img {
 
 /* --------header ------------- */
 .header {
-  width: 100%;
+  padding: 10px 20px;
+
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.35) 0px -8px 20px;
   position: sticky;
@@ -91,6 +92,9 @@ nav > a {
 .projects30 {
   color: rgb(255, 0, 0);
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+.logo {
+  text-decoration: underline;
 }
 .days30 {
   color: rgba(10, 10, 10, 0.862);
