@@ -1,7 +1,7 @@
 let stopbtn = document.querySelector("#stopBtn");
 let resetbtn = document.querySelector("#resetBtn");
 let startbtn = document.querySelector("#startBtn");
-let timerDisplay = document.querySelector(".tinerDisplay");
+let timerDisplay = document.querySelector(".timerDisplay");
 
 let mins = 0;
 let secs = 0;

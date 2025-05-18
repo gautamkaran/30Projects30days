@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, #4e54c8, #8f94fb);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stopwatch {
+    padding: 30px 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+h2 {
+    font-size: 60px;
+    padding-bottom: 10px;
+}
+
+.timerDisplay {
+    width: 100%;
+    min-height: 60px;
+    font-size: 45px;
+    font-weight: bold;
+    margin-block: 10px;
+    text-align: center;
+    font-family: monospace;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 25px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #fff;
+    background: var(--btn-color);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(12px);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.btn:hover {
+    background: color-mix(in srgb, var(--btn-color), black 15%);
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+@media screen and (max-width: 479px) {
+    h2 {
+        font-size: 50px;
+    }
+
+    .timerDisplay {
+        min-height: 50px;
+        font-size: 35px;
+        margin-top: 10px;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+}
